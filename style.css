@@ -9,7 +9,7 @@
 body{
   overflow: hidden;
   min-height: 100vh;
-  background: #FFFFFF;
+  background: #000000;
 
 }
 
@@ -23,7 +23,7 @@ span {
 
   position: absolute;
   pointer-events: none;
-  background: #000000;
+  background: #f5f1f1;
   animation: animate 5s linear infinite;
 
 }
