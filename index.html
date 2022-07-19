@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang = "en">
   <head>
-  <!--  <meta name="viewport" content="width=device-width, initial-scale=1">--> 
+   <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta charset = "UTF-8">
     
@@ -13,7 +13,60 @@
   </head>
   <body>
 
-    <section></section>
+    <div class="container">
+        <div class = "vertical-center">
+            <h1> Thibaud Roy </h1>
+        </div>
+    </div>
+
+    
+    <div class="socials">
+        <div class="column">
+            <a href = "https://github.com/ThibaudARoy">
+                <img alt="GitHubLogo" src = "https://cdn-icons-png.flaticon.com/512/25/25231.png" target="_blank" width = "150" height = "150">
+            </a>
+        </div>
+        <div class="column">
+            <a href = "https://www.linkedin.com/in/thibaud-roy-a70412176">
+                <img alt="LinkedInLogo" src = "https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png" target="_blank" width = "150" height = "150">
+            </a>
+        </div>
+        <div class="column">
+            <a href = "https://github.com/ThibaudARoy">
+                <img alt="ResumeLogo" src = "https://i.pinimg.com/736x/57/fe/98/57fe9893aca86265c86d94d93824e91b.jpg" target="_blank" width = "150" height = "150">
+            </a>
+        </div>
+        <div class="column">
+            <a href = "mailto:thibaud.a.roy@gmail.com">
+                <img alt="EmailLogo" src = "https://www.shareicon.net/data/512x512/2017/05/09/885762_email_512x512.png" target="_blank" width = "150" height = "150">
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+  	<input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
+  	<label for="menu-icon"></label>
+  	<nav class="nav"> 		
+  		<ul class="pt-5">
+  			<li><a href="thibaudaroy.github.io/about">about</a></li>
+  			<li><a href="thibaudaroy.github.io/about">projects</a></li>
+  		<!--	<li><a href="#">News</a></li>
+  			<li><a href="#">Contact</a></li>-->
+  		</ul>
+  	</nav>
+
+
+
+
+
+    
+    <section>
+    </section>
+
+
 
     <script>
 
@@ -33,14 +86,15 @@
         square.style.height = 20 + size + 'px';
 
         square.style.top = Math.random() * innerHeight + 'px';
-        square.style.right = Math.random() * innerHeight + 'px';
+        square.style.left = Math.random() * innerWidth + 'px';
 
         const bg = colors[Math.floor(Math.random() * colors.length)];
 
         square.style.background = bg;
 
         section.appendChild(square);
-
+        
+        
         setTimeout(() => {
           square.remove()
         }, 5000)
