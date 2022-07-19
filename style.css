@@ -1,0 +1,33 @@
+* { /* CSS universal selector. Can be used to select any all types of elements in an HTML page*/
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box; /* padding and border are now included in the width and height */
+}
+
+
+body{
+  overflow: hidden;
+  min-height: 100vh;
+  background: #FFFFFF;
+
+}
+
+
+section{
+  height:100vh;
+
+}
+
+span {
+
+  position: absolute;
+  pointer-events: none;
+  background: #000000;
+  animation: animate 5s linear infinite;
+
+}
+.hero{
+  width: 100%;
+  height: 100vh;
+}
