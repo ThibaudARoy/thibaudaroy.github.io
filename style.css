@@ -1,7 +1,7 @@
 * { /* CSS universal selector. Can be used to select any all types of elements in an HTML page*/
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+/*  font-family: sans-serif;*/
   box-sizing: border-box; /* padding and border are now included in the width and height */
 }
 
@@ -9,7 +9,7 @@
 body{
   overflow: hidden;
   min-height: 100vh;
-  background: #000000;
+  background: #000;
 
 }
 
