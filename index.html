@@ -9,34 +9,39 @@
     <title>Thibaud Roy</title>
 
     <link rel="stylesheet" href="style.css">
+
+
+    <meta name=”description” content="Thibaud Roy - Aspiring Full-Stack Developer, studying at McGill University"> 
+    <meta name=”keywords” content="Thibaud Roy, developer, Java, Big Data, HTML,JavaScript"> <!-- connect google analytics-->
+<meta name="author" content="Thibaud Roy"> <!-- set favicon with image-->
     
   </head>
   <body>
 
     <div class="container">
         <div class = "vertical-center">
-            <h1> Thibaud Roy </h1>
+            <h1> Hi! I'm Thibaud Roy </h1>
         </div>
     </div>
 
     
     <div class="socials">
-        <div class="column">
-            <a href = "https://github.com/ThibaudARoy">
-                <img alt="GitHubLogo" src = "https://cdn-icons-png.flaticon.com/512/25/25231.png" target="_blank" width = "150" height = "150">
+        <div class="column_social">
+            <a href = "https://github.com/ThibaudARoy" target="_blank">
+                <img alt="GitHubLogo" src = "https://cdn-icons-png.flaticon.com/512/25/25231.png" width = "150" height = "150">
             </a>
         </div>
-        <div class="column">
-            <a href = "https://www.linkedin.com/in/thibaud-roy-a70412176">
-                <img alt="LinkedInLogo" src = "https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png" target="_blank" width = "150" height = "150">
+        <div class="column_social">
+            <a href = "https://www.linkedin.com/in/thibaud-roy-a70412176" target="_blank">
+                <img alt="LinkedInLogo" src = "https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png"  width = "150" height = "150">
             </a>
         </div>
-        <div class="column">
-            <a href = "https://github.com/ThibaudARoy">
-                <img alt="ResumeLogo" src = "https://i.pinimg.com/736x/57/fe/98/57fe9893aca86265c86d94d93824e91b.jpg" target="_blank" width = "150" height = "150">
+        <div class="column_social">
+            <a href = "https://thibaudaroy.github.io/ThibaudRoyResume.pdf" target="_blank">
+                <img alt="ResumeLogo" src = "https://i.pinimg.com/736x/57/fe/98/57fe9893aca86265c86d94d93824e91b.jpg" width = "150" height = "150">
             </a>
         </div>
-        <div class="column">
+        <div class="column_social">
             <a href = "mailto:thibaud.a.roy@gmail.com">
                 <img alt="EmailLogo" src = "https://www.shareicon.net/data/512x512/2017/05/09/885762_email_512x512.png" target="_blank" width = "150" height = "150">
             </a>
@@ -51,8 +56,8 @@
   	<label for="menu-icon"></label>
   	<nav class="nav"> 		
   		<ul class="pt-5">
-  			<li><a href="thibaudaroy.github.io/about">about</a></li>
-  			<li><a href="thibaudaroy.github.io/projects">projects</a></li>
+  			<li><a href="https://thibaudaroy.github.io/about">about</a></li>
+  			<li><a href="https://thibaudaroy.github.io/projects">projects</a></li>
   		<!--	<li><a href="#">News</a></li>
   			<li><a href="#">Contact</a></li>-->
   		</ul>
@@ -76,6 +81,19 @@
         '#ffeb3b',
         '#74ff1d'
       ]
+
+      function findLeft(element) {
+  var rec = document.getElementById(element).getBoundingClientRect();
+  return rec.left + window.scrollX;
+} //call
+
+function findTop(element) {
+  var rec = document.getElementById(element).getBoundingClientRect();
+  return rec.top + window.scrollY;
+} //call it like findTop('#header');
+
+
+
       function createSquare(){
         const section = document.querySelector('section');
         const square = document.createElement('span');
@@ -94,10 +112,24 @@
 
         section.appendChild(square);
         
+        // var bodyRect = document.body.getBoundingClientRect(),
+        //    elemRect = square.getBoundingClientRect(),
+        //   offset   = elemRect.top - bodyRect.top;
         
+      // <!--  var bodyRect = document.body.getBoundingClientRect(),
+ //   elemRect = square.getBoundingClientRect(),
+ //   offset   = elemRect.top - bodyRect.top;-->
+
+        // if(elemrect <= 1000){
+        //     alert('Element is ' + offset + ' vertical pixels from <body>');
+        // }
+
+        
+
+
         setTimeout(() => {
           square.remove()
-        }, 5000)
+        }, 4000)
       }
 
       setInterval(createSquare, 150);
