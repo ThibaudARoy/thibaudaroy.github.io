@@ -71,9 +71,10 @@
   }
   .projects{
 	width: 1500px;
+  border-color: green;
 
 	position: absolute;
-	top: 30%;
+	top: 23%;
 /*	border: 10px solid yellow;*/
 	left: 50%;
 	-ms-transform: translateY(75%);
@@ -123,10 +124,11 @@
 /* put in meta descripton of head of html or can put into css */
 body{
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 300;
-	font-size: 15px;
+	font-weight: 500;
+  
+	font-size: 18px;
 	line-height: 1.7;
-	color: #ececee;
+	color: #000000;
 	background-color: white;
 	overflow: hidden;
   background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
@@ -156,6 +158,8 @@ h1{
   color: #C7EDE4;
   text-align: center;
   z-index: 1000;
+  text-shadow: 2px 2px #2bbe9f;
+
   /*
   -webkit-text-stroke: 2px #a7aaff;
   text-stroke: 2px #ffeba7;
