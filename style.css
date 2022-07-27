@@ -63,14 +63,14 @@
  
 
   .column_project{
-	float:left;
+    float:left;
 	width: 33.33%;
 	border:rgb(116, 23, 23);
 	border-color: blue;
 	border-width: 150px;
   }
   .projects{
-	width: 1500px;
+	width: 1000px;
   border-color: green;
 
 	position: absolute;
@@ -126,7 +126,7 @@ body{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
   
-	font-size: 18px;
+	font-size: 14px;
 	line-height: 1.7;
 	color: #000000;
 	background-color: white;
